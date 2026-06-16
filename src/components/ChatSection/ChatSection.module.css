@@ -1,0 +1,90 @@
+/* ChatSection — see CONTEXT.md for spec */
+
+.section {
+  flex-shrink: 0;
+  border-top: 1px solid var(--color-border-tertiary);
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--color-background-primary);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-secondary);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.contextPill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-secondary);
+  color: var(--color-text-secondary);
+}
+
+.userIcon {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+}
+
+.inputRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.textarea {
+  flex: 1;
+  resize: none;
+  font-size: 13px;
+  padding: 9px 12px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-secondary);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  transition: border-color 0.15s;
+}
+
+.textarea::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-border-primary);
+}
+
+.sendBtn {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-md);
+  background: var(--color-text-primary);
+  color: var(--color-background-primary);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s;
+}
+
+.sendBtn:hover {
+  opacity: 0.85;
+}

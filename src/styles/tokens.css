@@ -1,0 +1,24 @@
+/* Design tokens — all CSS custom properties live here */
+
+:root {
+  /* Backgrounds */
+  --color-background-primary: #141414;
+  --color-background-secondary: #1c1c1c;
+
+  /* Text */
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: #a0a0a0;
+  --color-text-tertiary: #606060;
+
+  /* Borders */
+  --color-border-primary: #4a4a4a;
+  --color-border-secondary: #2e2e2e;
+  --color-border-tertiary: #222222;
+
+  /* Radii */
+  --border-radius-md: 6px;
+  --border-radius-lg: 12px;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}

@@ -1,0 +1,38 @@
+export const students = [
+  {
+    id: 'ahmed',
+    name: 'Ahmed',
+    initials: 'AH',
+    level: 'B1',
+    focus: 'Sales',
+    avatar: { bg: '#EEEDFE', text: '#3C3489' },
+    isActiveSession: true,
+  },
+  {
+    id: 'sara',
+    name: 'Sara',
+    initials: 'SA',
+    level: 'A2',
+    focus: 'Travel',
+    avatar: { bg: '#E1F5EE', text: '#085041' },
+    isActiveSession: false,
+  },
+  {
+    id: 'khalid',
+    name: 'Khalid',
+    initials: 'KH',
+    level: 'B2',
+    focus: 'Tech',
+    avatar: { bg: '#FAECE7', text: '#712B13' },
+    isActiveSession: false,
+  },
+  {
+    id: 'layla',
+    name: 'Layla',
+    initials: 'LA',
+    level: 'C1',
+    focus: 'Academic',
+    avatar: { bg: '#E6F1FB', text: '#0C447C' },
+    isActiveSession: false,
+  },
+]
