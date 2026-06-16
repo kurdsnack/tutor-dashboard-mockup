@@ -1,5 +1,3 @@
-/* App shell — outer wrapper and two-column layout */
-
 .wrapper {
   min-height: 100vh;
   display: flex;
@@ -12,11 +10,13 @@
 .layout {
   display: flex;
   width: 100%;
-  max-width: 960px;
+  max-width: 980px;
   height: calc(100vh - 48px);
+  min-height: 560px;
   border: 0.5px solid var(--color-border-tertiary);
   border-radius: var(--border-radius-lg);
   overflow: hidden;
+  background: var(--color-background-primary);
 }
 
 .main {

@@ -1,3 +1,4 @@
+import { Plus } from 'lucide-react'
 import StudentItem from '../StudentItem/StudentItem'
 import styles from './Sidebar.module.css'
 
@@ -9,7 +10,7 @@ export default function Sidebar({ students, activeStudentId, onSelectStudent }) 
       <div className={styles.header}>
         <span className={styles.label}>Students</span>
         <button className={styles.addBtn}>
-          <span className={styles.addIcon}>+</span>
+          <Plus size={12} strokeWidth={2} />
           Add student
         </button>
       </div>
@@ -28,7 +29,9 @@ export default function Sidebar({ students, activeStudentId, onSelectStudent }) 
       {activeSessionStudent && (
         <div className={styles.sessionBadge}>
           <span className={styles.greenDot} />
-          {activeSessionStudent.name} · active session
+          <span className={styles.badgeText}>
+            {activeSessionStudent.name} · active session
+          </span>
         </div>
       )}
     </aside>

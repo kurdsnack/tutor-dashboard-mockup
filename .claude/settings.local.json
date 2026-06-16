@@ -3,7 +3,19 @@
     "allow": [
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(gh repo *)",
+      "PowerShell(python --version 2>&1)",
+      "PowerShell(python3 --version 2>&1)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(npm install -g uipro-cli 2>&1)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"AI SaaS dashboard education language tutor tool dark minimal\" --design-system -p \"Tutor Dashboard\" -f markdown)",
+      "PowerShell(Get-Command python3.14 -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command py -ErrorAction SilentlyContinue)",
+      "Bash(py .claude/skills/ui-ux-pro-max/scripts/search.py \"AI SaaS dashboard education language tutor tool dark minimal\" --design-system -p \"Tutor Dashboard\" -f markdown)",
+      "PowerShell(npx playwright install chromium 2>&1)"
     ]
   }
 }

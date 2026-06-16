@@ -81,21 +81,32 @@ Defined in `src/styles/tokens.css` on `:root`. Never hardcode hex in component C
 
 ### 4.3 Typography
 
-**Font:** Inter (already linked in `index.html`) — clean, neutral, Linear-like.
+**Pairing:** Fira Code + Fira Sans (ui-ux-pro-max "Dashboard Data" recommendation — Mono + Sans, dashboard/analytics mood)
+
+| Token | Font | Usage |
+|---|---|---|
+| `--font-mono` | `'Fira Code', monospace` | 11px uppercase section labels, level indicators, badge text |
+| `--font-sans` | `'Fira Sans', system-ui, sans-serif` | All other UI text — names, buttons, inputs, card title |
+
+**Google Fonts import (in `index.html`):**
+```
+https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap
+```
 
 **Scale:**
 
-| Use | Size | Weight | Color |
-|---|---|---|---|
-| Section labels (uppercase) | 11px | 500 | `--color-text-tertiary` |
-| Student level / sub-labels | 11px | 400 | `--color-text-tertiary` |
-| Student names / action btns | 13px | 400 | `--color-text-primary` / secondary |
-| Card title | 14px | 600 | `--color-text-primary` |
-| Textarea placeholder | 13px | 400 | `--color-text-tertiary` |
+| Use | Font | Size | Weight | Color |
+|---|---|---|---|---|
+| Section labels (uppercase) | Fira Code | 11px | 500 | `--color-text-tertiary` |
+| Student level / sub-labels | Fira Code | 11px | 400 | `--color-text-tertiary` |
+| Active session badge | Fira Code | 11px | 400 | `--color-text-secondary` |
+| Student names / action btns | Fira Sans | 13px | 400 | `--color-text-primary` / secondary |
+| Card title | Fira Sans | 14px | 600 | `--color-text-primary` |
+| Textarea / select / pill | Fira Sans | 12–13px | 400 | various |
 
 > No large display type. This is a dense utility UI — keep font sizes tight.
 
-**Letter-spacing:** `0.08em` on all 11px uppercase labels.
+**Letter-spacing:** `0.08em` on all 11px Fira Code uppercase labels.
 
 ### 4.4 Iconography
 

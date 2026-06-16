@@ -1,3 +1,4 @@
+import { ClipboardList } from 'lucide-react'
 import styles from './StudentItem.module.css'
 
 export default function StudentItem({ student, isActive, onSelect }) {
@@ -18,8 +19,12 @@ export default function StudentItem({ student, isActive, onSelect }) {
         <span className={styles.level}>{student.level} · {student.focus}</span>
       </div>
 
-      <button className={styles.logBtn} onClick={(e) => e.stopPropagation()} title="Log session">
-        ↗
+      <button
+        className={styles.logBtn}
+        onClick={(e) => e.stopPropagation()}
+        aria-label={`Log session for ${student.name}`}
+      >
+        <ClipboardList size={13} strokeWidth={1.75} />
       </button>
     </li>
   )

@@ -1,65 +1,74 @@
-/* ChatSection — see CONTEXT.md for spec */
-
 .section {
   flex-shrink: 0;
   border-top: 1px solid var(--color-border-tertiary);
-  padding: 14px 20px;
+  padding: 12px 18px 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 9px;
   background: var(--color-background-primary);
 }
 
 .controls {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .select {
+  font-family: var(--font-sans);
   font-size: 12px;
-  padding: 5px 10px;
+  padding: 5px 8px;
   border-radius: var(--border-radius-md);
   background: var(--color-background-secondary);
   border: 1px solid var(--color-border-secondary);
   color: var(--color-text-secondary);
   cursor: pointer;
+  outline: none;
+  transition: border-color 0.12s;
+}
+
+.select:focus {
+  border-color: var(--color-border-primary);
 }
 
 .contextPill {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
+  font-family: var(--font-sans);
   font-size: 12px;
   padding: 4px 10px;
   border-radius: 9999px;
   background: var(--color-background-secondary);
   border: 1px solid var(--color-border-secondary);
   color: var(--color-text-secondary);
+  white-space: nowrap;
 }
 
-.userIcon {
-  font-size: 10px;
+.pillIcon {
   color: var(--color-text-tertiary);
+  flex-shrink: 0;
 }
 
 .inputRow {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 8px;
 }
 
 .textarea {
   flex: 1;
   resize: none;
+  font-family: var(--font-sans);
   font-size: 13px;
+  line-height: 1.5;
   padding: 9px 12px;
   border-radius: var(--border-radius-md);
   background: var(--color-background-secondary);
   border: 1px solid var(--color-border-secondary);
   color: var(--color-text-primary);
-  line-height: 1.5;
-  transition: border-color 0.15s;
+  outline: none;
+  transition: border-color 0.12s;
 }
 
 .textarea::placeholder {
@@ -67,7 +76,6 @@
 }
 
 .textarea:focus {
-  outline: none;
   border-color: var(--color-border-primary);
 }
 
@@ -78,13 +86,13 @@
   border-radius: var(--border-radius-md);
   background: var(--color-text-primary);
   color: var(--color-background-primary);
-  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.15s;
+  cursor: pointer;
+  transition: opacity 0.12s;
 }
 
 .sendBtn:hover {
-  opacity: 0.85;
+  opacity: 0.82;
 }
