@@ -2,18 +2,18 @@
 
 :root {
   /* Backgrounds */
-  --color-background-primary: #141414;
-  --color-background-secondary: #1c1c1c;
+  --color-background-primary: #FAFAF8;
+  --color-background-secondary: #F3F3F0;
 
   /* Text */
-  --color-text-primary: #f0f0f0;
-  --color-text-secondary: #a0a0a0;
-  --color-text-tertiary: #606060;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #737373;
+  --color-text-tertiary: #A8A08A;
 
   /* Borders */
-  --color-border-primary: #4a4a4a;
-  --color-border-secondary: #2e2e2e;
-  --color-border-tertiary: #222222;
+  --color-border-primary: #C8C8C0;
+  --color-border-secondary: #E8E8E4;
+  --color-border-tertiary: #F0F0EC;
 
   /* Radii */
   --border-radius-md: 6px;
